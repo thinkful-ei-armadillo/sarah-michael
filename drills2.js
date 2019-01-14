@@ -72,3 +72,45 @@ if (leapYear === false){
 }
 }
 }
+
+function rps(input){
+	const randomNo = Math.floor(Math.random() * 3) + 1;
+	
+	if(input < 1 || input > 3){
+		console.error("Invalid Input");
+	}
+	
+	if(input === randomNo){
+		console.log("Tie");
+	}
+	
+	if(input === 1){
+		if(randomNo === 2){
+			console.log("Lose");
+		}
+		
+		if(randomNo === 3){
+			console.log("Win");
+		}
+	}
+	
+	if(input === 2){
+		if(randomNo === 1){
+			console.log("Win");
+		}
+		
+		if(randomNo === 3){
+			console.log("Lose");
+		}
+	}
+	
+	if(input === 3){
+		if(randomNo === 1){
+			console.log("Lose");
+		}
+		
+		if(randomNo === 2){
+			console.log("Win");
+		}
+	}
+}
