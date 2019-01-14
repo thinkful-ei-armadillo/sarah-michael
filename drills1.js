@@ -1,5 +1,5 @@
-function createGreeting(){
-    return 'Hi, my name is Michael and I\'m 21 years old.';
+function createGreeting(name, age){
+    return `Hi, my name is ${name} and I'm ${age} years old.`;
 }
 
 const greeting1 = createGreeting();
