@@ -41,3 +41,34 @@ function decode(word){
         return ' ';
     }
 }
+
+function howManyDays(month, leapYear){
+switch(month){
+ case 'January':
+ case 'March':
+ case 'May':
+ case 'July':
+ case 'August':
+ case 'October':
+ case 'December':
+    result = `${month} has 31 days.`
+    break;
+}
+switch(month){
+case 'April':
+case 'June':
+case 'September':
+case 'November':
+result = `${month} has 30 days.`
+    break;
+}
+switch(month){
+    case 'February':
+if (leapYear === true){
+    return `February has 29 days.`
+}    
+if (leapYear === false){
+    return `February has 28 days.`
+}
+}
+}
